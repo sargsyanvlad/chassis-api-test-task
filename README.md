@@ -39,7 +39,7 @@ Task is to implement an API that can do following:
 * Types are important
 * Tests are welcomed
 * Linter is set up, feel free to update linter rules
-* Result of this test task is:
+## Result of this test task is:
   * Working API with instructions how to run it. Better if deployed somewhere.
   * Endpoints description w/contracts (Better if it's accessible Swagger)
   * Description of solution drawbacks/limitations
