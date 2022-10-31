@@ -1,8 +1,4 @@
-Dockerfile
-.dockerignore
-node_modules
-yarn-error.log
-dist
-pgdata
-docker-compose.yml
-.env
+/node_modules
+/.data
+/dist
+/files
