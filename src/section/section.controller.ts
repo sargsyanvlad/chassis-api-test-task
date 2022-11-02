@@ -18,11 +18,15 @@ import { SectionService } from './section.service';
 import { PollService } from '../poll/poll.service';
 import { CreateSectionDto } from './dto/create-section.dto';
 import { UpdateSectionDto } from './dto/update-section.dto';
-import {ApiBearerAuth, ApiCreatedResponse, ApiResponse, ApiTags} from '@nestjs/swagger';
+import {
+  ApiBearerAuth,
+  ApiCreatedResponse,
+  ApiResponse,
+  ApiTags,
+} from '@nestjs/swagger';
 import { AuthGuard } from '@nestjs/passport';
 import { infinityPagination } from 'src/utils/infinity-pagination';
-import { SectionsSchema } from "./schemas/section-schema";
-import {UserSchema} from "../users/schema/user-schema";
+import { SectionsSchema } from './schemas/section-schema';
 
 @ApiTags('Polls')
 @Controller({
@@ -41,7 +45,7 @@ export class SectionController {
   @UseGuards(AuthGuard('jwt'))
   @ApiCreatedResponse({
     description: 'The record has been successfully created.',
-    type: SectionsSchema
+    type: SectionsSchema,
   })
   async create(@Request() request, @Body() createSection: CreateSectionDto) {
     const poll = await this.pollService.findOne({

@@ -23,7 +23,7 @@ import { OptionalJwtAuthGuard } from '../auth/auth-guard';
 import { FindOptionsWhere } from 'typeorm';
 import { Polls } from './entities/poll.entity';
 import { UpdatePollDto } from './dto/update-poll.dto';
-import {PollSchema} from "./schemas/poll-schema";
+import { PollSchema } from './schemas/poll-schema';
 
 @ApiTags('Polls')
 @Controller({
