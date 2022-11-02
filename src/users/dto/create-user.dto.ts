@@ -1,12 +1,6 @@
 import { Transform } from 'class-transformer';
 import { ApiProperty } from '@nestjs/swagger';
-import {
-  IsEmail,
-  IsNotEmpty,
-  IsOptional,
-  MinLength,
-  Validate,
-} from 'class-validator';
+import { IsEmail, IsNotEmpty, MinLength, Validate } from 'class-validator';
 
 import { IsNotExist } from '../../utils/validators/is-not-exists.validator';
 
