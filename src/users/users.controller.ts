@@ -15,10 +15,10 @@ import {
 import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
-import {ApiBearerAuth, ApiResponse, ApiTags} from '@nestjs/swagger';
+import { ApiBearerAuth, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { AuthGuard } from '@nestjs/passport';
 import { infinityPagination } from 'src/utils/infinity-pagination';
-import { UserSchema } from "./schema/user-schema";
+import { UserSchema } from './schema/user-schema';
 
 @ApiTags('Users')
 @Controller({

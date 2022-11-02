@@ -1,19 +1,19 @@
-import { ApiProperty } from "@nestjs/swagger";
-import { UserSchema } from '../../users/schema/user-schema'
+import { ApiProperty } from '@nestjs/swagger';
+import { UserSchema } from '../../users/schema/user-schema';
 
 export class AnswerSchema {
-	@ApiProperty()
-	id: number;
+  @ApiProperty()
+  id: number;
 
-	@ApiProperty()
-	questionId: number;
+  @ApiProperty()
+  questionId: number;
 
-	@ApiProperty()
-	answer: string;
+  @ApiProperty()
+  answer: string;
 
-	@ApiProperty({ example: 1 })
-	participantId: number;
+  @ApiProperty({ example: 1 })
+  participantId: number;
 
-	@ApiProperty()
-	participant: UserSchema
+  @ApiProperty()
+  participant: UserSchema;
 }
